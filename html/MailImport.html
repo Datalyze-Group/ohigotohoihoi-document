@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta content="text/css" http-equiv="Content-Style-Type" />
+		<meta content="text/javascript" http-equiv="Content-Script-Type" />
+		<title>メール取り込み画面 | お仕事ホイホイ</title>
+		<link href="./base.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body>
+	<div id="grobal_menu" >
+	　　<ul>
+			<li> <a class="btn" href="./MailImport.html">メール取り込み</a> </li>
+			<li> <a class="btn" href="./SearchHuman.html">人材を探す</a> </li>
+			<li> <a class="btn" href="#">案件を探す</a> </li>
+			<li> <a class="btn" href="#">マッチング画面</a> </li>
+			<li> <a class="btn" href="#">管理画面</a> </li>
+		</ul>
+	</div>
+	<hr />	
+	
+	<div id="wrapper">
+		<div id="container">
+			<h2>メール取り込み画面</h2>
+			<div>
+				<p>以下のテキストに案件、または人材のメールを貼り付けてください。</p>
+				<form>
+					<p><textarea name="" style="width: 400px; height: 300px;"></textarea></p>
+					
+					<input type="submit" value="送信" onclick="return confirm('メールを取り込みます。よろしいですか？');" />
+				</form>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
