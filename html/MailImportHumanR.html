@@ -1,0 +1,55 @@
+﻿<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta content="text/css" http-equiv="Content-Style-Type" />
+		<meta content="text/javascript" http-equiv="Content-Script-Type" />
+		<title>メール取り込み画面 | お仕事ホイホイ</title>
+		<link href="./css/base.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+	<div id="grobal_menu" >
+	　　<ul>
+	　		<li>メール取り込み</li>
+			<li> <a class="btn" href="./MailImportHuman.html">(人材)</a> </li>
+			<li> <a class="btn" href="./MailImportWorks.html">(案件)</a> </li>
+			<li>　|　</li>
+			<li> <a class="btn" href="./SearchHuman.html">人材を探す</a> </li>
+			<li> <a class="btn" href="#">案件を探す</a> </li>
+			<li> <a class="btn" href="#">マッチング画面</a> </li>
+			<li> <a class="btn" href="#">管理画面</a> </li>
+		</ul>
+	</div>
+	<hr />	
+	
+	<div id="wrapper">
+		<div id="container">
+			<h2><span style="background-color:#70CDBE">人材メールを取り込む</span></h2>
+			<div>
+				<p>以下のテキストに人材のメールを貼り付けてください。</p>
+				<form action="./MailImportHumanR.html">
+					<p><textarea name="" style="width: 400px; height: 300px;"></textarea></p>
+					
+					<input type="submit" value="送信" onclick="return confirm('メールを取り込みます。よろしいですか？');" />
+				</form>
+			</div>
+			<hr />
+			<h3>登録結果の表示</h3>
+			<div>
+				<p><font color="#DA0B00">hoge件のメールを登録しました</font></p>
+				<table border="1" width="500" cellspacing"0" cellpadding"5" bordercoler"#333333">
+				<tr>
+					<th bgcolor="#70CDBE">区分</th>
+					<th bgcolor="#70CDBE">No.</th>
+					<th bgcolor="#70CDBE">タイトル</th>
+				</tr>
+				<tr>
+					<th bgcolor="#FFFFFF">人材</th>
+					<th bgcolor="#FFFFFF">0001</th>
+					<th bgcolor="#FFFFFF">人材案件！</th>
+				</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
